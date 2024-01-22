@@ -7,8 +7,5 @@
  * @example createCounter() => () => 0 => () => 1 => () => 2
  */
 export function createCounter() {
-  let count = 0;
-  return function () {
-    return count++;
-  };
+  throw new Error("Not implemented");
 }

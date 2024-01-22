@@ -8,7 +8,7 @@
  * @example onlyEven([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) => [2, 4, 6, 8, 10]
  */
 export function onlyEven(numbers: number[]): number[] {
-  return numbers.filter((number) => number % 2 === 0);
+  throw new Error("Not implemented");
 }
 
 /**
@@ -17,7 +17,7 @@ export function onlyEven(numbers: number[]): number[] {
  * @example max([-1, -3, -5, -7, -9]) => -1
  */
 export function findMaximumNumber(numbers: number[]): number {
-  return Math.max(...numbers);
+  throw new Error("Not implemented");
 }
 
 /**
@@ -28,5 +28,5 @@ export function findMaximumNumber(numbers: number[]): number {
  * @exemple sum([-1, 0, -2, 5, 3, 6, 7, 8, -9, -10]) => 7
  */
 export function sumNumbers(numbers: number[]): number {
-  return numbers.reduce((acc, number) => acc + number, 0);
+  throw new Error("Not implemented");
 }
