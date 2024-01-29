@@ -8,7 +8,7 @@
  * @example reverseString('world') => 'dlrow'
  */
 export function reverseString(str: string): string {
-  throw new Error("Not implemented");
+  return str.split("").reverse().join("");
 }
 
 /**
@@ -18,7 +18,7 @@ export function reverseString(str: string): string {
  * @example countLetter('world', 'o') => 1
  */
 export function countLetter(str: string, letter: string): number {
-  throw new Error("Not implemented");
+  return str.match(new RegExp(letter, "g"))?.length ?? 0;
 }
 
 /**
@@ -27,5 +27,5 @@ export function countLetter(str: string, letter: string): number {
  * @example isPalindrome('madam') => true
  */
 export function isPalindrome(str: string): boolean {
-  throw new Error("Not implemented");
+  return str === reverseString(str);
 }

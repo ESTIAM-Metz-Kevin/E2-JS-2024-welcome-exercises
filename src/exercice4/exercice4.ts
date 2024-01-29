@@ -8,7 +8,7 @@
  * @example updateObjectProperty({name: 'John'}, 'age', 30) => {name: 'John', age: 30}
  */
 export function updateObjectProperty(object: { [key: string]: any }, property: string, value: any): { [key: string]: any } {
-  throw new Error("Not implemented");
+  return { ...object, [property]: value };
 }
 
 /**
@@ -19,5 +19,5 @@ export function updateObjectProperty(object: { [key: string]: any }, property: s
  * @example mergeObjects({name: 'John'}, {name: 'Doe', age: 30}) => {name: 'Doe', age: 30}
  */
 export function mergeObjects(object1: { [key: string]: any }, object2: { [key: string]: any }): { [key: string]: any } {
-  throw new Error("Not implemented");
+  return { ...object1, ...object2 };
 }
