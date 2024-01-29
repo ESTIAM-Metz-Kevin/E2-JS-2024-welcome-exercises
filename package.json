@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"test": "vitest"
+		"test": "vitest --ui"
 	},
 	"devDependencies": {
 		"@vitest/ui": "^1.2.1",
